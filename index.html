@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NN MULTimarcas - Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="header">
+                <div class="logo-container">
+                    <div class="logo">
+                        <i class="fas fa-store"></i>
+                    </div>
+                </div>
+                <h1 class="company-name">NN MULTimarcas</h1>
+                <p class="tagline">Sua loja de confiança</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Dtudobox@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="https://wa.me/5534999086399" class="btn whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+
+                <a href="#" class="btn instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="#" class="btn store" target="_blank">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Nossa Loja</span>
+                </a>
+
+                <button class="btn pix" onclick="showPixInfo()">
+                    <i class="fas fa-qrcode"></i>
+                    <span>PIX</span>
+                </button>
+
+                <a href="tel:+5534999086399" class="btn phone">
+                    <i class="fas fa-phone"></i>
+                    <span>Ligar</span>
+                </a>
+
+                <a href="mailto:Dtudobox@gmail.com" class="btn email">
+                    <i class="fas fa-envelope"></i>
+                    <span>E-mail</span>
+                </a>
+            </div>
+
+            <div class="footer">
+                <p>Escaneie o QR Code para acessar nossos contatos</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal PIX -->
+    <div id="pixModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePixModal()">&times;</span>
+            <h3>Pagamento PIX</h3>
+            <div class="pix-info">
+                <p><strong>Chave PIX:</strong></p>
+                <p class="pix-key">38598747000166</p>
+                <button onclick="copyPix()" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copiar Chave PIX
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
